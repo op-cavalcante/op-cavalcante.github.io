@@ -6,9 +6,23 @@ body {
 }
 
 header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px;
+    background-image: url('images/header-background.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover ensures the image covers the header */
+    color: white; /* Assuming white text stands out against your image */
+    padding: 40px 20px; /* Adjust padding to ensure sufficient space for your text */
+    text-align: center; /* Centers the text horizontally */
+    position: relative; /* Needed for proper overlay positioning */
+}
+
+/* New class for the overlay text */
+.header-text {
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjusts the precise centering */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust the font size as needed */
+    width: 100%; /* Ensures the text is centered in the header */
     text-align: center;
 }
 
