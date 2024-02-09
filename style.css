@@ -36,7 +36,16 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    /* Removed fixed positioning to allow natural document flow */
+}
+
+/* Add some spacing to the bottom of the site to ensure footer doesn't cover content */
+body {
+    margin-bottom: 40px;
+}
+
+/* Improve scrolling experience for longer content */
+html {
+    scroll-behavior: smooth;
 }
